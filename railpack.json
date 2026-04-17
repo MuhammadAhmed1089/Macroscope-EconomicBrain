@@ -1,0 +1,15 @@
+{
+  "$schema": "https://schema.railpack.com",
+  "steps": {
+    "install": {
+      "commands": ["pip install -r requirements.txt"]
+    },
+    "build": {
+      "inputs": [{ "step": "install" }],
+      "commands": []
+    }
+  },
+  "deploy": {
+    "startCommand": "python -m app.main"
+  }
+}
