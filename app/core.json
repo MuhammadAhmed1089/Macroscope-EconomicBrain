@@ -1,0 +1,112 @@
+{
+  "input_provider": "csv",
+  "input_path": "data/GDP.csv",
+  "excelPath": "data/GDP.xlsx",
+  "output_provider": "graphics",
+
+  "parameters": {
+    "continent": "Asia",
+    "year": 2023,
+    "top_n": 18,
+    "YearRange": {
+      "startYear": 2010,
+      "EndYear": 2021
+    },
+    "continents": [
+      "Asia",
+      "Europe",
+      "Africa",
+      "North America",
+      "South America",
+      "Oceania"
+    ],
+    "lastXyears": 3
+  },
+
+  "FunctionOption": "1",
+
+  "chart": {
+    "params": {
+      "1": {
+        "type": "bar",
+        "x_key": "country",
+        "y_key": "gdp",
+        "title": "Top 10 Countries by GDP (in USD)",
+        "x_label": "Country",
+        "y_label": "GDP (USD)",
+        "value_key": "gdp",
+        "label_key": "country"
+      },
+      "2": {
+        "type": "bar",
+        "x_key": "country",
+        "y_key": "gdp",
+        "title": "Bottom 10 Countries by GDP (in USD)",
+        "x_label": "Country",
+        "y_label": "GDP (USD)",
+        "value_key": "gdp",
+        "label_key": "year"
+      },
+      "3": {
+        "type": "line",
+        "x_key": "country",
+        "y_key": "growth_rate",
+        "title": "Average GDP Growth ",
+        "x_label": "Country",
+        "y_label": "Growth(%)",
+        "value_key": "growth_rate",
+        "label_key": "country"
+      },
+      "4": {
+        "type": "bar",
+        "x_key": "continent",
+        "y_key": "average_gdp",
+        "title": "Average GDP for Continent",
+        "x_label": "Continent",
+        "y_label": "GDP (USD)",
+        "value_key": "average_gdp",
+        "label_key": "continent"
+      },
+      "5": {
+        "type": "line",
+        "x_key": "year",
+        "y_key": "totalGDP",
+        "title": "Global GDP Contribution",
+        "x_label": "Year",
+        "y_label": "GDP (USD)",
+        "value_key": "totalGDP",
+        "label_key": "year"
+      },
+      "6": {
+        "type": "bar",
+        "x_key": "continent",
+        "y_key": "growthPercent",
+        "title": "Fastest Growing Continent",
+        "x_label": "Continent",
+        "y_label": "Growth(%)",
+        "value_key": "growthPercent",
+        "label_key": "continent"
+      },
+      "7": {
+        "type": "line",
+        "x_key": "country",
+        "y_key": "totalDeclinePercent",
+        "title": "Consistent Declining GDP of Countries",
+        "x_label": "Country",
+        "y_label": "Decline Perent(%)",
+        "value_key": "totalDeclinePercent",
+        "label_key": "country"
+      },
+      "8": {
+        "type": "pie",
+        "x_key": "continent",
+        "y_key": "globalContribution",
+        "title": "Global GDP Contribution of Continents",
+        "x_label": "Continent",
+        "y_label": "GDP (USD)",
+        "value_key": "globalContribution",
+        "label_key": "continent"
+      }
+    }
+  }
+}
